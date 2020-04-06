@@ -1,0 +1,1132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
+  m_Name: Button Udon C# Program Asset 2
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 9dca6eacc4ecbae4dbf2a2ed27ae54a3,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export _gameObject\r\n    .sync syncCube,
+    none\r\n\r\n    __refl_const_intnl_udonTypeID: %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName:
+    %SystemString, null\r\n    _gameObject: %UnityEngineGameObject, null\r\n    _randomY:
+    %SystemSingle, null\r\n    syncCube: %UnityEngineVector3, null\r\n    __0_this_intnl_UnityEngineGameObject:
+    %UnityEngineGameObject, this\r\n    __0_x_Single: %SystemSingle, null\r\n    __0_y_Single:
+    %SystemSingle, null\r\n    __0_z_Single: %SystemSingle, null\r\n    __0__position_Vector3:
+    %UnityEngineVector3, null\r\n    __0_const_intnl_SystemSingle: %SystemSingle,
+    null\r\n    __1_const_intnl_SystemSingle: %SystemSingle, null\r\n    __0_const_intnl_SystemUInt32:
+    %SystemUInt32, null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __0_intnl_SystemSingle: %SystemSingle, null\r\n    __1_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __2_intnl_SystemSingle: %SystemSingle, null\r\n    __3_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __0_intnl_UnityEngineTransform: %UnityEngineTransform,
+    null\r\n    __1_intnl_UnityEngineTransform: %UnityEngineTransform, null\r\n    __0_intnl_returnTarget_UInt32:
+    %SystemUInt32, null\r\n    __0_intnl_UnityEngineVector3: %UnityEngineVector3,
+    null\r\n    __1_intnl_UnityEngineVector3: %UnityEngineVector3, null\r\n    __0_intnl_VRCSDKBaseVRCPlayerApi:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __1_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __2_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n
+    \   __3_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n    __4_intnl_VRCSDKBaseVRCPlayerApi:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __5_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
+    null\r\n\r\n.data_end\r\n\r\n        \r\n         # using UdonSharp;\r\n        \r\n
+    \        # using UnityEngine;\r\n        \r\n         # using VRC.SDKBase;\r\n
+    \       \r\n         # using VRC.Udon;\r\n        \r\n         # public class
+    ObjectRandom : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         # [SerializeField]
+    private GameObject _gameObject;\r\n        \r\n         # private float _randomY;\r\n
+    \       \r\n         # [UdonSynced(UdonSyncMode.None)] private Vector3 syncCube;\r\n
+    \       \r\n         # public void ObjectRandomMove()\r\n    .export ObjectRandomMove\r\n
+    \       \r\n    ObjectRandomMove:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
+    {\r\n        \r\n         # if (Networking.GetOwner(this.gameObject) != Networking.LocalPlayer)\r\n
+    \       PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __0_this_intnl_UnityEngineGameObject\r\n        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       EXTERN, \"VRCSDKBaseNetworking.__GetOwner__UnityEngineGameObject__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000094\r\n
+    \       \r\n         # Networking.SetOwner(Networking.LocalPlayer, this.gameObject);\r\n
+    \       PUSH, __2_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __2_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __0_this_intnl_UnityEngineGameObject\r\n
+    \       EXTERN, \"VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid\"\r\n
+    \       \r\n         # if (Networking.GetOwner(_gameObject) != Networking.LocalPlayer)\r\n
+    \       PUSH, __3_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, _gameObject\r\n        PUSH, __4_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       EXTERN, \"VRCSDKBaseNetworking.__GetOwner__UnityEngineGameObject__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __4_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __3_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       PUSH, __1_intnl_SystemBoolean\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __1_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000114\r\n
+    \       \r\n         # Networking.SetOwner(Networking.LocalPlayer, _gameObject);\r\n
+    \       PUSH, __5_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __5_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, _gameObject\r\n
+    \       EXTERN, \"VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid\"\r\n
+    \       \r\n         # _randomY = Random.Range(0f, 1.5f);\r\n        PUSH, __0_const_intnl_SystemSingle\r\n
+    \       PUSH, __1_const_intnl_SystemSingle\r\n        PUSH, __0_intnl_SystemSingle\r\n
+    \       EXTERN, \"UnityEngineRandom.__Range__SystemSingle_SystemSingle__SystemSingle\"\r\n
+    \       PUSH, __0_intnl_SystemSingle\r\n        PUSH, _randomY\r\n        COPY\r\n
+    \       \r\n         # Debug.Log(_randomY);\r\n        PUSH, _randomY\r\n        EXTERN,
+    \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n        \r\n         #
+    var _position = _gameObject.transform.position;\r\n        PUSH, _gameObject\r\n
+    \       PUSH, __0_intnl_UnityEngineTransform\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
+    \       PUSH, __0_intnl_UnityEngineTransform\r\n        PUSH, __0_intnl_UnityEngineVector3\r\n
+    \       EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
+    \       PUSH, __0_intnl_UnityEngineVector3\r\n        PUSH, __0__position_Vector3\r\n
+    \       COPY\r\n        \r\n         # var x = _position.x;\r\n        PUSH, __0__position_Vector3\r\n
+    \       PUSH, __1_intnl_SystemSingle\r\n        EXTERN, \"UnityEngineVector3.__get_x__SystemSingle\"\r\n
+    \       PUSH, __1_intnl_SystemSingle\r\n        PUSH, __0_x_Single\r\n        COPY\r\n
+    \       \r\n         # var y = _position.y;\r\n        PUSH, __0__position_Vector3\r\n
+    \       PUSH, __2_intnl_SystemSingle\r\n        EXTERN, \"UnityEngineVector3.__get_y__SystemSingle\"\r\n
+    \       PUSH, __2_intnl_SystemSingle\r\n        PUSH, __0_y_Single\r\n        COPY\r\n
+    \       \r\n         # var z = _position.z;\r\n        PUSH, __0__position_Vector3\r\n
+    \       PUSH, __3_intnl_SystemSingle\r\n        EXTERN, \"UnityEngineVector3.__get_z__SystemSingle\"\r\n
+    \       PUSH, __3_intnl_SystemSingle\r\n        PUSH, __0_z_Single\r\n        COPY\r\n
+    \       \r\n         # y = _randomY;\r\n        PUSH, _randomY\r\n        PUSH,
+    __0_y_Single\r\n        COPY\r\n        \r\n         # syncCube = new Vector3(x,
+    _randomY, z);\r\n        PUSH, __0_x_Single\r\n        PUSH, _randomY\r\n        PUSH,
+    __0_z_Single\r\n        PUSH, __1_intnl_UnityEngineVector3\r\n        EXTERN,
+    \"UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3\"\r\n
+    \       PUSH, __1_intnl_UnityEngineVector3\r\n        PUSH, syncCube\r\n        COPY\r\n
+    \       \r\n         # _gameObject.transform.position = syncCube;\r\n        PUSH,
+    _gameObject\r\n        PUSH, __1_intnl_UnityEngineTransform\r\n        EXTERN,
+    \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n        PUSH,
+    __1_intnl_UnityEngineTransform\r\n        PUSH, syncCube\r\n        EXTERN, \"UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n.code_end\r\n"
+  assemblyError: 
+  sourceCsScript: {fileID: 11500000, guid: 636677356698e724aa1cfa364da5d99c, type: 3}
+  behaviourIDHeapVarName: __refl_const_intnl_udonTypeID
+  compileErrors: []
+  debugInfo:
+    serializedDebugSpans:
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 0
+      endSourceChar: 0
+      line: 0
+      lineChar: 0
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 0
+      endSourceChar: 0
+      line: 0
+      lineChar: 0
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 0
+      endSourceChar: 6
+      line: 0
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 6
+      endSourceChar: 18
+      line: 0
+      lineChar: 6
+      spanCodeSection: "UdonSharp;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 18
+      endSourceChar: 24
+      line: 1
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 24
+      endSourceChar: 38
+      line: 1
+      lineChar: 6
+      spanCodeSection: "UnityEngine;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 38
+      endSourceChar: 44
+      line: 2
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 44
+      endSourceChar: 44
+      line: 2
+      lineChar: 6
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 44
+      endSourceChar: 48
+      line: 2
+      lineChar: 6
+      spanCodeSection: VRC.
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 48
+      endSourceChar: 58
+      line: 2
+      lineChar: 10
+      spanCodeSection: "SDKBase;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 58
+      endSourceChar: 64
+      line: 3
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 64
+      endSourceChar: 64
+      line: 3
+      lineChar: 6
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 64
+      endSourceChar: 68
+      line: 3
+      lineChar: 6
+      spanCodeSection: VRC.
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 68
+      endSourceChar: 77
+      line: 3
+      lineChar: 10
+      spanCodeSection: "Udon;\r\n\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 77
+      endSourceChar: 103
+      line: 5
+      lineChar: 0
+      spanCodeSection: 'public class ObjectRandom '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 103
+      endSourceChar: 105
+      line: 5
+      lineChar: 26
+      spanCodeSection: ': '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 105
+      endSourceChar: 105
+      line: 5
+      lineChar: 28
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 105
+      endSourceChar: 132
+      line: 5
+      lineChar: 28
+      spanCodeSection: "UdonSharpBehaviour\r\n{\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 132
+      endSourceChar: 133
+      line: 7
+      lineChar: 4
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 133
+      endSourceChar: 133
+      line: 7
+      lineChar: 5
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 133
+      endSourceChar: 157
+      line: 7
+      lineChar: 5
+      spanCodeSection: 'SerializeField] private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 157
+      endSourceChar: 157
+      line: 7
+      lineChar: 29
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 157
+      endSourceChar: 186
+      line: 7
+      lineChar: 29
+      spanCodeSection: "GameObject _gameObject;\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 186
+      endSourceChar: 194
+      line: 8
+      lineChar: 4
+      spanCodeSection: 'private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 194
+      endSourceChar: 194
+      line: 8
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 194
+      endSourceChar: 217
+      line: 8
+      lineChar: 12
+      spanCodeSection: "float _randomY;\r\n\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 217
+      endSourceChar: 218
+      line: 10
+      lineChar: 4
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 218
+      endSourceChar: 229
+      line: 10
+      lineChar: 5
+      spanCodeSection: UdonSynced(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 229
+      endSourceChar: 229
+      line: 10
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 229
+      endSourceChar: 242
+      line: 10
+      lineChar: 16
+      spanCodeSection: UdonSyncMode.
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 242
+      endSourceChar: 242
+      line: 10
+      lineChar: 29
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 242
+      endSourceChar: 257
+      line: 10
+      lineChar: 29
+      spanCodeSection: 'None)] private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 257
+      endSourceChar: 257
+      line: 10
+      lineChar: 44
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 257
+      endSourceChar: 282
+      line: 10
+      lineChar: 44
+      spanCodeSection: "Vector3 syncCube;\r\n\r\n    "
+    - startInstruction: 0
+      endInstruction: 19
+      startSourceChar: 282
+      endSourceChar: 318
+      line: 12
+      lineChar: 4
+      spanCodeSection: "public void ObjectRandomMove()\r\n    "
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 318
+      endSourceChar: 329
+      line: 13
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 329
+      endSourceChar: 333
+      line: 14
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 333
+      endSourceChar: 373
+      line: 14
+      lineChar: 12
+      spanCodeSection: 'Networking.GetOwner(this.gameObject) != '
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 373
+      endSourceChar: 373
+      line: 14
+      lineChar: 52
+      spanCodeSection: 
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 373
+      endSourceChar: 384
+      line: 14
+      lineChar: 52
+      spanCodeSection: Networking.
+    - startInstruction: 20
+      endInstruction: 107
+      startSourceChar: 384
+      endSourceChar: 410
+      line: 14
+      lineChar: 63
+      spanCodeSection: "LocalPlayer)\r\n            "
+    - startInstruction: 108
+      endInstruction: 107
+      startSourceChar: 410
+      endSourceChar: 410
+      line: 15
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 108
+      endInstruction: 107
+      startSourceChar: 410
+      endSourceChar: 430
+      line: 15
+      lineChar: 12
+      spanCodeSection: Networking.SetOwner(
+    - startInstruction: 108
+      endInstruction: 107
+      startSourceChar: 430
+      endSourceChar: 430
+      line: 15
+      lineChar: 32
+      spanCodeSection: 
+    - startInstruction: 108
+      endInstruction: 107
+      startSourceChar: 430
+      endSourceChar: 441
+      line: 15
+      lineChar: 32
+      spanCodeSection: Networking.
+    - startInstruction: 108
+      endInstruction: 123
+      startSourceChar: 441
+      endSourceChar: 454
+      line: 15
+      lineChar: 43
+      spanCodeSection: 'LocalPlayer, '
+    - startInstruction: 124
+      endInstruction: 123
+      startSourceChar: 454
+      endSourceChar: 454
+      line: 15
+      lineChar: 56
+      spanCodeSection: 
+    - startInstruction: 124
+      endInstruction: 123
+      startSourceChar: 454
+      endSourceChar: 459
+      line: 15
+      lineChar: 56
+      spanCodeSection: this.
+    - startInstruction: 124
+      endInstruction: 147
+      startSourceChar: 459
+      endSourceChar: 522
+      line: 15
+      lineChar: 61
+      spanCodeSection: "gameObject);\r\n\r\n        // \u4ED6\u4EBA\u304B\u3089\u898B\u305F\u64CD\u4F5C\u3059\u308B\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u306E\u30AA\u30FC\u30CA\u30FC\u6A29\u9650\u3092\u8B72\u6E21\r\n
+        \       "
+    - startInstruction: 148
+      endInstruction: 147
+      startSourceChar: 522
+      endSourceChar: 526
+      line: 18
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 148
+      endInstruction: 147
+      startSourceChar: 526
+      endSourceChar: 562
+      line: 18
+      lineChar: 12
+      spanCodeSection: 'Networking.GetOwner(_gameObject) != '
+    - startInstruction: 148
+      endInstruction: 147
+      startSourceChar: 562
+      endSourceChar: 562
+      line: 18
+      lineChar: 48
+      spanCodeSection: 
+    - startInstruction: 148
+      endInstruction: 147
+      startSourceChar: 562
+      endSourceChar: 573
+      line: 18
+      lineChar: 48
+      spanCodeSection: Networking.
+    - startInstruction: 148
+      endInstruction: 235
+      startSourceChar: 573
+      endSourceChar: 599
+      line: 18
+      lineChar: 59
+      spanCodeSection: "LocalPlayer)\r\n            "
+    - startInstruction: 236
+      endInstruction: 235
+      startSourceChar: 599
+      endSourceChar: 599
+      line: 19
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 236
+      endInstruction: 235
+      startSourceChar: 599
+      endSourceChar: 619
+      line: 19
+      lineChar: 12
+      spanCodeSection: Networking.SetOwner(
+    - startInstruction: 236
+      endInstruction: 235
+      startSourceChar: 619
+      endSourceChar: 619
+      line: 19
+      lineChar: 32
+      spanCodeSection: 
+    - startInstruction: 236
+      endInstruction: 235
+      startSourceChar: 619
+      endSourceChar: 630
+      line: 19
+      lineChar: 32
+      spanCodeSection: Networking.
+    - startInstruction: 236
+      endInstruction: 251
+      startSourceChar: 630
+      endSourceChar: 643
+      line: 19
+      lineChar: 43
+      spanCodeSection: 'LocalPlayer, '
+    - startInstruction: 252
+      endInstruction: 275
+      startSourceChar: 643
+      endSourceChar: 668
+      line: 19
+      lineChar: 56
+      spanCodeSection: "_gameObject);\r\n\r\n        "
+    - startInstruction: 276
+      endInstruction: 275
+      startSourceChar: 668
+      endSourceChar: 668
+      line: 21
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 276
+      endInstruction: 275
+      startSourceChar: 668
+      endSourceChar: 679
+      line: 21
+      lineChar: 8
+      spanCodeSection: '_randomY = '
+    - startInstruction: 276
+      endInstruction: 275
+      startSourceChar: 679
+      endSourceChar: 692
+      line: 21
+      lineChar: 19
+      spanCodeSection: Random.Range(
+    - startInstruction: 276
+      endInstruction: 275
+      startSourceChar: 692
+      endSourceChar: 696
+      line: 21
+      lineChar: 32
+      spanCodeSection: '0f, '
+    - startInstruction: 276
+      endInstruction: 327
+      startSourceChar: 696
+      endSourceChar: 712
+      line: 21
+      lineChar: 36
+      spanCodeSection: "1.5f);\r\n        "
+    - startInstruction: 328
+      endInstruction: 327
+      startSourceChar: 712
+      endSourceChar: 712
+      line: 22
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 328
+      endInstruction: 327
+      startSourceChar: 712
+      endSourceChar: 722
+      line: 22
+      lineChar: 8
+      spanCodeSection: Debug.Log(
+    - startInstruction: 328
+      endInstruction: 343
+      startSourceChar: 722
+      endSourceChar: 744
+      line: 22
+      lineChar: 18
+      spanCodeSection: "_randomY);\r\n\r\n        "
+    - startInstruction: 344
+      endInstruction: 343
+      startSourceChar: 744
+      endSourceChar: 744
+      line: 24
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 344
+      endInstruction: 343
+      startSourceChar: 744
+      endSourceChar: 744
+      line: 24
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 344
+      endInstruction: 343
+      startSourceChar: 744
+      endSourceChar: 758
+      line: 24
+      lineChar: 8
+      spanCodeSection: 'var _position '
+    - startInstruction: 344
+      endInstruction: 343
+      startSourceChar: 758
+      endSourceChar: 760
+      line: 24
+      lineChar: 22
+      spanCodeSection: '= '
+    - startInstruction: 344
+      endInstruction: 343
+      startSourceChar: 760
+      endSourceChar: 760
+      line: 24
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 344
+      endInstruction: 343
+      startSourceChar: 760
+      endSourceChar: 760
+      line: 24
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 344
+      endInstruction: 343
+      startSourceChar: 760
+      endSourceChar: 772
+      line: 24
+      lineChar: 24
+      spanCodeSection: _gameObject.
+    - startInstruction: 344
+      endInstruction: 343
+      startSourceChar: 772
+      endSourceChar: 782
+      line: 24
+      lineChar: 36
+      spanCodeSection: transform.
+    - startInstruction: 344
+      endInstruction: 411
+      startSourceChar: 782
+      endSourceChar: 801
+      line: 24
+      lineChar: 46
+      spanCodeSection: "position;\r\n        "
+    - startInstruction: 412
+      endInstruction: 411
+      startSourceChar: 801
+      endSourceChar: 801
+      line: 25
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 412
+      endInstruction: 411
+      startSourceChar: 801
+      endSourceChar: 801
+      line: 25
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 412
+      endInstruction: 411
+      startSourceChar: 801
+      endSourceChar: 807
+      line: 25
+      lineChar: 8
+      spanCodeSection: 'var x '
+    - startInstruction: 412
+      endInstruction: 411
+      startSourceChar: 807
+      endSourceChar: 809
+      line: 25
+      lineChar: 14
+      spanCodeSection: '= '
+    - startInstruction: 412
+      endInstruction: 411
+      startSourceChar: 809
+      endSourceChar: 809
+      line: 25
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 412
+      endInstruction: 411
+      startSourceChar: 809
+      endSourceChar: 819
+      line: 25
+      lineChar: 16
+      spanCodeSection: _position.
+    - startInstruction: 412
+      endInstruction: 455
+      startSourceChar: 819
+      endSourceChar: 831
+      line: 25
+      lineChar: 26
+      spanCodeSection: "x;\r\n        "
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 831
+      endSourceChar: 831
+      line: 26
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 831
+      endSourceChar: 831
+      line: 26
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 831
+      endSourceChar: 837
+      line: 26
+      lineChar: 8
+      spanCodeSection: 'var y '
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 837
+      endSourceChar: 839
+      line: 26
+      lineChar: 14
+      spanCodeSection: '= '
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 839
+      endSourceChar: 839
+      line: 26
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 456
+      endInstruction: 455
+      startSourceChar: 839
+      endSourceChar: 849
+      line: 26
+      lineChar: 16
+      spanCodeSection: _position.
+    - startInstruction: 456
+      endInstruction: 499
+      startSourceChar: 849
+      endSourceChar: 861
+      line: 26
+      lineChar: 26
+      spanCodeSection: "y;\r\n        "
+    - startInstruction: 500
+      endInstruction: 499
+      startSourceChar: 861
+      endSourceChar: 861
+      line: 27
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 500
+      endInstruction: 499
+      startSourceChar: 861
+      endSourceChar: 861
+      line: 27
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 500
+      endInstruction: 499
+      startSourceChar: 861
+      endSourceChar: 867
+      line: 27
+      lineChar: 8
+      spanCodeSection: 'var z '
+    - startInstruction: 500
+      endInstruction: 499
+      startSourceChar: 867
+      endSourceChar: 869
+      line: 27
+      lineChar: 14
+      spanCodeSection: '= '
+    - startInstruction: 500
+      endInstruction: 499
+      startSourceChar: 869
+      endSourceChar: 869
+      line: 27
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 500
+      endInstruction: 499
+      startSourceChar: 869
+      endSourceChar: 879
+      line: 27
+      lineChar: 16
+      spanCodeSection: _position.
+    - startInstruction: 500
+      endInstruction: 543
+      startSourceChar: 879
+      endSourceChar: 891
+      line: 27
+      lineChar: 26
+      spanCodeSection: "z;\r\n        "
+    - startInstruction: 544
+      endInstruction: 543
+      startSourceChar: 891
+      endSourceChar: 891
+      line: 28
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 544
+      endInstruction: 543
+      startSourceChar: 891
+      endSourceChar: 895
+      line: 28
+      lineChar: 8
+      spanCodeSection: 'y = '
+    - startInstruction: 544
+      endInstruction: 563
+      startSourceChar: 895
+      endSourceChar: 916
+      line: 28
+      lineChar: 12
+      spanCodeSection: "_randomY;\r\n\r\n        "
+    - startInstruction: 564
+      endInstruction: 563
+      startSourceChar: 916
+      endSourceChar: 916
+      line: 30
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 564
+      endInstruction: 563
+      startSourceChar: 916
+      endSourceChar: 927
+      line: 30
+      lineChar: 8
+      spanCodeSection: 'syncCube = '
+    - startInstruction: 564
+      endInstruction: 563
+      startSourceChar: 927
+      endSourceChar: 931
+      line: 30
+      lineChar: 19
+      spanCodeSection: 'new '
+    - startInstruction: 564
+      endInstruction: 563
+      startSourceChar: 931
+      endSourceChar: 939
+      line: 30
+      lineChar: 23
+      spanCodeSection: Vector3(
+    - startInstruction: 564
+      endInstruction: 563
+      startSourceChar: 939
+      endSourceChar: 939
+      line: 30
+      lineChar: 31
+      spanCodeSection: 
+    - startInstruction: 564
+      endInstruction: 563
+      startSourceChar: 939
+      endSourceChar: 942
+      line: 30
+      lineChar: 31
+      spanCodeSection: 'x, '
+    - startInstruction: 564
+      endInstruction: 563
+      startSourceChar: 942
+      endSourceChar: 942
+      line: 30
+      lineChar: 34
+      spanCodeSection: 
+    - startInstruction: 564
+      endInstruction: 563
+      startSourceChar: 942
+      endSourceChar: 952
+      line: 30
+      lineChar: 34
+      spanCodeSection: '_randomY, '
+    - startInstruction: 564
+      endInstruction: 563
+      startSourceChar: 952
+      endSourceChar: 952
+      line: 30
+      lineChar: 44
+      spanCodeSection: 
+    - startInstruction: 564
+      endInstruction: 623
+      startSourceChar: 952
+      endSourceChar: 967
+      line: 30
+      lineChar: 44
+      spanCodeSection: "z);\r\n\r\n        "
+    - startInstruction: 624
+      endInstruction: 623
+      startSourceChar: 967
+      endSourceChar: 967
+      line: 32
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 624
+      endInstruction: 623
+      startSourceChar: 967
+      endSourceChar: 1000
+      line: 32
+      lineChar: 8
+      spanCodeSection: '_gameObject.transform.position = '
+    - startInstruction: 624
+      endInstruction: 624
+      startSourceChar: 1000
+      endSourceChar: 1000
+      line: 32
+      lineChar: 41
+      spanCodeSection: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: fieldDefinitions
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UdonSharp.FieldDefinition,
+        UdonSharp.Editor]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: _gameObject
+    - Name: $v
+      Entry: 7
+      Data: 2|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 3|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 4|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.GameObject, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: UnityEngineGameObject
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: _gameObject
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: _gameObject
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 6|UnityEngine.SerializeField, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: _randomY
+    - Name: $v
+      Entry: 7
+      Data: 7|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 8|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 9|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Single, mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemSingle
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: _randomY
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: _randomY
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: syncCube
+    - Name: $v
+      Entry: 7
+      Data: 11|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 12|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 13|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
+      Data: 1
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: UnityEngineVector3
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: syncCube
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: syncCube
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 14|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 15|UdonSharp.UdonSyncedAttribute, UdonSharp.Runtime
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
