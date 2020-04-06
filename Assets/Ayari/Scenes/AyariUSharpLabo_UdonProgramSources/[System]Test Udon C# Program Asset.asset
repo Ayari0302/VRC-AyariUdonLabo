@@ -1,0 +1,2356 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
+  m_Name: '[System]Test Udon C# Program Asset'
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 82db978ec8f8c5c4d87bdf57fe04c0a8,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export _gameObject\r\n\r\n    __refl_const_intnl_udonTypeID:
+    %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n
+    \   _gameObject: %UnityEngineGameObject, null\r\n    xAmountOfMovement: %SystemSingle,
+    null\r\n    zAmountOfMovement: %SystemSingle, null\r\n    _cubeUi: %VRCUdonUdonBehaviour,
+    null\r\n    __0_this_intnl_UnityEngineGameObject: %UnityEngineGameObject, this\r\n
+    \   __0_x_Single: %SystemSingle, null\r\n    __0_z_Single: %SystemSingle, null\r\n
+    \   __1_x_Single: %SystemSingle, null\r\n    __1_z_Single: %SystemSingle, null\r\n
+    \   __0__position_Vector3: %UnityEngineVector3, null\r\n    __1__position_Vector3:
+    %UnityEngineVector3, null\r\n    __2__position_Vector3: %UnityEngineVector3, null\r\n
+    \   __3__position_Vector3: %UnityEngineVector3, null\r\n    __0_const_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __0_const_intnl_SystemInt32: %SystemInt32, null\r\n
+    \   __1_const_intnl_SystemInt32: %SystemInt32, null\r\n    __0_const_intnl_SystemInt64:
+    %SystemInt64, null\r\n    __1_const_intnl_SystemInt64: %SystemInt64, null\r\n
+    \   __0_const_intnl_SystemObject: %SystemObject, null\r\n    __0_const_intnl_SystemString:
+    %SystemString, null\r\n    __1_const_intnl_SystemString: %SystemString, null\r\n
+    \   __2_const_intnl_SystemString: %SystemString, null\r\n    __3_const_intnl_SystemString:
+    %SystemString, null\r\n    __4_const_intnl_SystemString: %SystemString, null\r\n
+    \   __5_const_intnl_SystemString: %SystemString, null\r\n    __6_const_intnl_SystemString:
+    %SystemString, null\r\n    __0_const_intnl_SystemType: %SystemType, null\r\n    __0_const_intnl_CubeUI:
+    %VRCUdonUdonBehaviour, null\r\n    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
+    null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n    __1_const_intnl_exitJumpLoc_UInt32:
+    %SystemUInt32, null\r\n    __2_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
+    null\r\n    __3_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null\r\n    __4_const_intnl_exitJumpLoc_UInt32:
+    %SystemUInt32, null\r\n    __5_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
+    null\r\n    __6_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null\r\n    __7_const_intnl_exitJumpLoc_UInt32:
+    %SystemUInt32, null\r\n    __8_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
+    null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __2_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __3_intnl_SystemBoolean: %SystemBoolean, null\r\n    __4_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __5_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __6_intnl_SystemBoolean: %SystemBoolean, null\r\n    __7_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __8_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __0_intnl_UnityEngineComponent: %UnityEngineComponent, null\r\n    __0_intnl_UnityEngineComponentArray:
+    %UnityEngineComponentArray, null\r\n    __0_intnl_UnityEngineGameObject: %UnityEngineGameObject,
+    null\r\n    __0_intnl_SystemInt32: %SystemInt32, null\r\n    __1_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __2_intnl_SystemInt32: %SystemInt32, null\r\n    __0_intnl_SystemInt64:
+    %SystemInt64, null\r\n    __1_intnl_SystemInt64: %SystemInt64, null\r\n    __0_intnl_SystemObject:
+    %SystemObject, null\r\n    __0_intnl_SystemSingle: %SystemSingle, null\r\n    __1_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __10_intnl_SystemSingle: %SystemSingle, null\r\n    __11_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __12_intnl_SystemSingle: %SystemSingle, null\r\n    __13_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __14_intnl_SystemSingle: %SystemSingle, null\r\n    __15_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __2_intnl_SystemSingle: %SystemSingle, null\r\n    __3_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __4_intnl_SystemSingle: %SystemSingle, null\r\n    __5_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __6_intnl_SystemSingle: %SystemSingle, null\r\n    __7_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __8_intnl_SystemSingle: %SystemSingle, null\r\n    __9_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __0_intnl_SystemString: %SystemString, null\r\n    __0_intnl_UnityEngineTransform:
+    %UnityEngineTransform, null\r\n    __1_intnl_UnityEngineTransform: %UnityEngineTransform,
+    null\r\n    __2_intnl_UnityEngineTransform: %UnityEngineTransform, null\r\n    __3_intnl_UnityEngineTransform:
+    %UnityEngineTransform, null\r\n    __4_intnl_UnityEngineTransform: %UnityEngineTransform,
+    null\r\n    __5_intnl_UnityEngineTransform: %UnityEngineTransform, null\r\n    __6_intnl_UnityEngineTransform:
+    %UnityEngineTransform, null\r\n    __7_intnl_UnityEngineTransform: %UnityEngineTransform,
+    null\r\n    __8_intnl_UnityEngineTransform: %UnityEngineTransform, null\r\n    __9_intnl_UnityEngineTransform:
+    %UnityEngineTransform, null\r\n    __0_intnl_CubeUI: %VRCUdonUdonBehaviour, null\r\n
+    \   __1_intnl_CubeUI: %VRCUdonUdonBehaviour, null\r\n    __0_intnl_oldReturnLoc_UInt32:
+    %SystemUInt32, null\r\n    __0_intnl_returnTarget_UInt32: %SystemUInt32, null\r\n
+    \   __1_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n    __2_intnl_oldReturnLoc_UInt32:
+    %SystemUInt32, null\r\n    __3_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n
+    \   __4_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n    __5_intnl_oldReturnLoc_UInt32:
+    %SystemUInt32, null\r\n    __6_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n
+    \   __7_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n    __8_intnl_oldReturnLoc_UInt32:
+    %SystemUInt32, null\r\n    __0_intnl_UnityEngineVector3: %UnityEngineVector3,
+    null\r\n    __1_intnl_UnityEngineVector3: %UnityEngineVector3, null\r\n    __2_intnl_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n    __3_intnl_UnityEngineVector3: %UnityEngineVector3,
+    null\r\n    __4_intnl_UnityEngineVector3: %UnityEngineVector3, null\r\n    __5_intnl_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n    __6_intnl_UnityEngineVector3: %UnityEngineVector3,
+    null\r\n    __7_intnl_UnityEngineVector3: %UnityEngineVector3, null\r\n    __0_intnl_VRCSDKBaseVRCPlayerApi:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __1_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __2_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n
+    \   __3_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n    __4_intnl_VRCSDKBaseVRCPlayerApi:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __5_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
+    null\r\n\r\n.data_end\r\n\r\n        \r\n         # using UdonSharp;\r\n        \r\n
+    \        # using UnityEngine;\r\n        \r\n         # using VRC.SDKBase;\r\n
+    \       \r\n         # using VRC.Udon;\r\n        \r\n         # public class
+    MoveSyncObject : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         # [SerializeField]
+    private GameObject _gameObject;\r\n        \r\n         # private float xAmountOfMovement
+    = 4.08f;\r\n        \r\n         # private float zAmountOfMovement = 4.39f;\r\n
+    \       \r\n         # private CubeUI _cubeUi;\r\n        \r\n         # private
+    void Start()\r\n    .export _start\r\n        \r\n    _start:\r\n        \r\n
+    \       PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # _cubeUi = gameObject.transform.root.gameObject.GetComponent<CubeUI>();\r\n
+    \       PUSH, __0_this_intnl_UnityEngineGameObject\r\n        PUSH, __0_intnl_UnityEngineTransform\r\n
+    \       EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
+    \       PUSH, __0_intnl_UnityEngineTransform\r\n        PUSH, __1_intnl_UnityEngineTransform\r\n
+    \       EXTERN, \"UnityEngineTransform.__get_root__UnityEngineTransform\"\r\n
+    \       PUSH, __1_intnl_UnityEngineTransform\r\n        PUSH, __0_intnl_UnityEngineGameObject\r\n
+    \       EXTERN, \"UnityEngineTransform.__get_gameObject__UnityEngineGameObject\"\r\n
+    \       PUSH, __0_intnl_UnityEngineGameObject\r\n        PUSH, __0_const_intnl_SystemType\r\n
+    \       PUSH, __0_intnl_UnityEngineComponentArray\r\n        EXTERN, \"UnityEngineGameObject.__GetComponents__SystemType__UnityEngineComponentArray\"\r\n
+    \       PUSH, __0_const_intnl_CubeUI\r\n        PUSH, __0_intnl_CubeUI\r\n        COPY\r\n
+    \       PUSH, __0_intnl_UnityEngineComponentArray\r\n        PUSH, __0_intnl_SystemInt32\r\n
+    \       EXTERN, \"UnityEngineComponentArray.__get_Length__SystemInt32\"\r\n        PUSH,
+    __0_const_intnl_SystemInt32\r\n        PUSH, __1_intnl_SystemInt32\r\n        COPY\r\n
+    \       PUSH, __1_intnl_SystemInt32\r\n        PUSH, __0_intnl_SystemInt32\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000240\r\n
+    \       PUSH, __0_intnl_UnityEngineComponentArray\r\n        PUSH, __1_intnl_SystemInt32\r\n
+    \       PUSH, __0_intnl_UnityEngineComponent\r\n        EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
+    \       PUSH, __0_intnl_UnityEngineComponent\r\n        PUSH, __1_intnl_CubeUI\r\n
+    \       COPY\r\n        PUSH, __1_intnl_CubeUI\r\n        PUSH, __0_const_intnl_SystemString\r\n
+    \       PUSH, __0_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __0_intnl_SystemObject\r\n        PUSH, __0_const_intnl_SystemObject\r\n
+    \       PUSH, __1_intnl_SystemBoolean\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __1_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000001A4\r\n
+    \       PUSH, __0_intnl_SystemObject\r\n        PUSH, __1_intnl_SystemInt64\r\n
+    \       EXTERN, \"SystemConvert.__ToInt64__SystemObject__SystemInt64\"\r\n        PUSH,
+    __1_intnl_SystemInt64\r\n        PUSH, __0_intnl_SystemInt64\r\n        COPY\r\n
+    \       JUMP, 0x000001B8\r\n        PUSH, __1_const_intnl_SystemInt64\r\n        PUSH,
+    __0_intnl_SystemInt64\r\n        COPY\r\n        PUSH, __0_intnl_SystemInt64\r\n
+    \       PUSH, __0_const_intnl_SystemInt64\r\n        PUSH, __2_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemInt64.__op_Equality__SystemInt64_SystemInt64__SystemBoolean\"\r\n
+    \       PUSH, __2_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000204\r\n
+    \       PUSH, __1_intnl_CubeUI\r\n        PUSH, __0_intnl_CubeUI\r\n        COPY\r\n
+    \       JUMP, 0x00000240\r\n        PUSH, __1_intnl_SystemInt32\r\n        PUSH,
+    __1_const_intnl_SystemInt32\r\n        PUSH, __2_intnl_SystemInt32\r\n        EXTERN,
+    \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n        PUSH,
+    __2_intnl_SystemInt32\r\n        PUSH, __1_intnl_SystemInt32\r\n        COPY\r\n
+    \       JUMP, 0x000000BC\r\n        PUSH, __0_intnl_CubeUI\r\n        PUSH, _cubeUi\r\n
+    \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n
+    \       \r\n         # public override void Interact()\r\n    .export _interact\r\n
+    \       \r\n    _interact:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
+    {\r\n        \r\n         # TransferOfAuthority();\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       PUSH, __0_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __0_const_intnl_exitJumpLoc_UInt32\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000538\r\n
+    \       PUSH, __0_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # switch (gameObject.name)\r\n        PUSH,
+    __0_this_intnl_UnityEngineGameObject\r\n        PUSH, __0_intnl_SystemString\r\n
+    \       EXTERN, \"UnityEngineGameObject.__get_name__SystemString\"\r\n        \r\n
+    \        # case \"forward\":\r\n        PUSH, __0_intnl_SystemString\r\n        PUSH,
+    __1_const_intnl_SystemString\r\n        PUSH, __3_intnl_SystemBoolean\r\n        EXTERN,
+    \"SystemString.__op_Equality__SystemString_SystemString__SystemBoolean\"\r\n        PUSH,
+    __3_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000304\r\n        JUMP,
+    0x000003B4\r\n        \r\n         # case \"backward\":\r\n        PUSH, __0_intnl_SystemString\r\n
+    \       PUSH, __2_const_intnl_SystemString\r\n        PUSH, __4_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemString.__op_Equality__SystemString_SystemString__SystemBoolean\"\r\n
+    \       PUSH, __4_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x0000033C\r\n
+    \       JUMP, 0x00000400\r\n        \r\n         # case \"leftward\":\r\n        PUSH,
+    __0_intnl_SystemString\r\n        PUSH, __3_const_intnl_SystemString\r\n        PUSH,
+    __5_intnl_SystemBoolean\r\n        EXTERN, \"SystemString.__op_Equality__SystemString_SystemString__SystemBoolean\"\r\n
+    \       PUSH, __5_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000374\r\n
+    \       JUMP, 0x0000044C\r\n        \r\n         # case \"rightward\":\r\n        PUSH,
+    __0_intnl_SystemString\r\n        PUSH, __4_const_intnl_SystemString\r\n        PUSH,
+    __6_intnl_SystemBoolean\r\n        EXTERN, \"SystemString.__op_Equality__SystemString_SystemString__SystemBoolean\"\r\n
+    \       PUSH, __6_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000003AC\r\n
+    \       JUMP, 0x00000498\r\n        JUMP, 0x000004E4\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       PUSH, __1_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __1_const_intnl_exitJumpLoc_UInt32\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000654\r\n
+    \       PUSH, __1_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        JUMP, 0x000004E4\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       PUSH, __2_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __2_const_intnl_exitJumpLoc_UInt32\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x000007E0\r\n
+    \       PUSH, __2_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        JUMP, 0x000004E4\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       PUSH, __3_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __3_const_intnl_exitJumpLoc_UInt32\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x0000096C\r\n
+    \       PUSH, __3_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        JUMP, 0x000004E4\r\n        \r\n         # Rightward();\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        PUSH, __4_intnl_oldReturnLoc_UInt32\r\n
+    \       COPY\r\n        PUSH, __4_const_intnl_exitJumpLoc_UInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000AF8\r\n
+    \       PUSH, __4_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # break;\r\n        JUMP, 0x000004E4\r\n
+    \       \r\n         # _cubeUi.OnSetActive(false);\r\n        PUSH, _cubeUi\r\n
+    \       PUSH, __5_const_intnl_SystemString\r\n        PUSH, __0_const_intnl_SystemBoolean\r\n
+    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
+    \       PUSH, _cubeUi\r\n        PUSH, __6_const_intnl_SystemString\r\n        EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # private void TransferOfAuthority()\r\n    TransferOfAuthority:\r\n
+    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # if (Networking.GetOwner(this.gameObject)
+    != Networking.LocalPlayer)\r\n        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __0_this_intnl_UnityEngineGameObject\r\n        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       EXTERN, \"VRCSDKBaseNetworking.__GetOwner__UnityEngineGameObject__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       PUSH, __7_intnl_SystemBoolean\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __7_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000005B8\r\n
+    \       \r\n         # Networking.SetOwner(Networking.LocalPlayer, this.gameObject);\r\n
+    \       PUSH, __2_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __2_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __0_this_intnl_UnityEngineGameObject\r\n
+    \       EXTERN, \"VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid\"\r\n
+    \       \r\n         # if (Networking.GetOwner(_gameObject) != Networking.LocalPlayer)\r\n
+    \       PUSH, __3_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, _gameObject\r\n        PUSH, __4_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       EXTERN, \"VRCSDKBaseNetworking.__GetOwner__UnityEngineGameObject__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __4_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __3_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       PUSH, __8_intnl_SystemBoolean\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __8_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000638\r\n
+    \       \r\n         # Networking.SetOwner(Networking.LocalPlayer, _gameObject);\r\n
+    \       PUSH, __5_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __5_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, _gameObject\r\n
+    \       EXTERN, \"VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # public void Forward()\r\n    .export Forward\r\n        \r\n    Forward:\r\n
+    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # TransferOfAuthority();\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        PUSH, __5_intnl_oldReturnLoc_UInt32\r\n
+    \       COPY\r\n        PUSH, __5_const_intnl_exitJumpLoc_UInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000538\r\n
+    \       PUSH, __5_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # var _position = _gameObject.transform.position;\r\n
+    \       PUSH, _gameObject\r\n        PUSH, __2_intnl_UnityEngineTransform\r\n
+    \       EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
+    \       PUSH, __2_intnl_UnityEngineTransform\r\n        PUSH, __0_intnl_UnityEngineVector3\r\n
+    \       EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
+    \       PUSH, __0_intnl_UnityEngineVector3\r\n        PUSH, __0__position_Vector3\r\n
+    \       COPY\r\n        \r\n         # var z = _position.z + zAmountOfMovement;\r\n
+    \       PUSH, __0__position_Vector3\r\n        PUSH, __0_intnl_SystemSingle\r\n
+    \       EXTERN, \"UnityEngineVector3.__get_z__SystemSingle\"\r\n        PUSH,
+    __0_intnl_SystemSingle\r\n        PUSH, zAmountOfMovement\r\n        PUSH, __1_intnl_SystemSingle\r\n
+    \       EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n
+    \       PUSH, __1_intnl_SystemSingle\r\n        PUSH, __0_z_Single\r\n        COPY\r\n
+    \       \r\n         # _position = new Vector3(_position.x, _position.y, z);\r\n
+    \       PUSH, __0__position_Vector3\r\n        PUSH, __2_intnl_SystemSingle\r\n
+    \       EXTERN, \"UnityEngineVector3.__get_x__SystemSingle\"\r\n        PUSH,
+    __0__position_Vector3\r\n        PUSH, __3_intnl_SystemSingle\r\n        EXTERN,
+    \"UnityEngineVector3.__get_y__SystemSingle\"\r\n        PUSH, __2_intnl_SystemSingle\r\n
+    \       PUSH, __3_intnl_SystemSingle\r\n        PUSH, __0_z_Single\r\n        PUSH,
+    __1_intnl_UnityEngineVector3\r\n        EXTERN, \"UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3\"\r\n
+    \       PUSH, __1_intnl_UnityEngineVector3\r\n        PUSH, __0__position_Vector3\r\n
+    \       COPY\r\n        \r\n         # _gameObject.transform.position = _position;\r\n
+    \       PUSH, _gameObject\r\n        PUSH, __3_intnl_UnityEngineTransform\r\n
+    \       EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
+    \       PUSH, __3_intnl_UnityEngineTransform\r\n        PUSH, __0__position_Vector3\r\n
+    \       EXTERN, \"UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # public void Backward()\r\n    .export Backward\r\n        \r\n    Backward:\r\n
+    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # TransferOfAuthority();\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        PUSH, __6_intnl_oldReturnLoc_UInt32\r\n
+    \       COPY\r\n        PUSH, __6_const_intnl_exitJumpLoc_UInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000538\r\n
+    \       PUSH, __6_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # var _position = _gameObject.transform.position;\r\n
+    \       PUSH, _gameObject\r\n        PUSH, __4_intnl_UnityEngineTransform\r\n
+    \       EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
+    \       PUSH, __4_intnl_UnityEngineTransform\r\n        PUSH, __2_intnl_UnityEngineVector3\r\n
+    \       EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
+    \       PUSH, __2_intnl_UnityEngineVector3\r\n        PUSH, __1__position_Vector3\r\n
+    \       COPY\r\n        \r\n         # var z = _position.z - zAmountOfMovement;\r\n
+    \       PUSH, __1__position_Vector3\r\n        PUSH, __4_intnl_SystemSingle\r\n
+    \       EXTERN, \"UnityEngineVector3.__get_z__SystemSingle\"\r\n        PUSH,
+    __4_intnl_SystemSingle\r\n        PUSH, zAmountOfMovement\r\n        PUSH, __5_intnl_SystemSingle\r\n
+    \       EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n
+    \       PUSH, __5_intnl_SystemSingle\r\n        PUSH, __1_z_Single\r\n        COPY\r\n
+    \       \r\n         # _position = new Vector3(_position.x, _position.y, z);\r\n
+    \       PUSH, __1__position_Vector3\r\n        PUSH, __6_intnl_SystemSingle\r\n
+    \       EXTERN, \"UnityEngineVector3.__get_x__SystemSingle\"\r\n        PUSH,
+    __1__position_Vector3\r\n        PUSH, __7_intnl_SystemSingle\r\n        EXTERN,
+    \"UnityEngineVector3.__get_y__SystemSingle\"\r\n        PUSH, __6_intnl_SystemSingle\r\n
+    \       PUSH, __7_intnl_SystemSingle\r\n        PUSH, __1_z_Single\r\n        PUSH,
+    __3_intnl_UnityEngineVector3\r\n        EXTERN, \"UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3\"\r\n
+    \       PUSH, __3_intnl_UnityEngineVector3\r\n        PUSH, __1__position_Vector3\r\n
+    \       COPY\r\n        \r\n         # _gameObject.transform.position = _position;\r\n
+    \       PUSH, _gameObject\r\n        PUSH, __5_intnl_UnityEngineTransform\r\n
+    \       EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
+    \       PUSH, __5_intnl_UnityEngineTransform\r\n        PUSH, __1__position_Vector3\r\n
+    \       EXTERN, \"UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # public void Leftward()\r\n    .export Leftward\r\n        \r\n    Leftward:\r\n
+    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # TransferOfAuthority();\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        PUSH, __7_intnl_oldReturnLoc_UInt32\r\n
+    \       COPY\r\n        PUSH, __7_const_intnl_exitJumpLoc_UInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000538\r\n
+    \       PUSH, __7_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # var _position = _gameObject.transform.position;\r\n
+    \       PUSH, _gameObject\r\n        PUSH, __6_intnl_UnityEngineTransform\r\n
+    \       EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
+    \       PUSH, __6_intnl_UnityEngineTransform\r\n        PUSH, __4_intnl_UnityEngineVector3\r\n
+    \       EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
+    \       PUSH, __4_intnl_UnityEngineVector3\r\n        PUSH, __2__position_Vector3\r\n
+    \       COPY\r\n        \r\n         # var x = _position.x - xAmountOfMovement;\r\n
+    \       PUSH, __2__position_Vector3\r\n        PUSH, __8_intnl_SystemSingle\r\n
+    \       EXTERN, \"UnityEngineVector3.__get_x__SystemSingle\"\r\n        PUSH,
+    __8_intnl_SystemSingle\r\n        PUSH, xAmountOfMovement\r\n        PUSH, __9_intnl_SystemSingle\r\n
+    \       EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n
+    \       PUSH, __9_intnl_SystemSingle\r\n        PUSH, __0_x_Single\r\n        COPY\r\n
+    \       \r\n         # _position = new Vector3(x, _position.y, _position.z);\r\n
+    \       PUSH, __2__position_Vector3\r\n        PUSH, __10_intnl_SystemSingle\r\n
+    \       EXTERN, \"UnityEngineVector3.__get_y__SystemSingle\"\r\n        PUSH,
+    __2__position_Vector3\r\n        PUSH, __11_intnl_SystemSingle\r\n        EXTERN,
+    \"UnityEngineVector3.__get_z__SystemSingle\"\r\n        PUSH, __0_x_Single\r\n
+    \       PUSH, __10_intnl_SystemSingle\r\n        PUSH, __11_intnl_SystemSingle\r\n
+    \       PUSH, __5_intnl_UnityEngineVector3\r\n        EXTERN, \"UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3\"\r\n
+    \       PUSH, __5_intnl_UnityEngineVector3\r\n        PUSH, __2__position_Vector3\r\n
+    \       COPY\r\n        \r\n         # _gameObject.transform.position = _position;\r\n
+    \       PUSH, _gameObject\r\n        PUSH, __7_intnl_UnityEngineTransform\r\n
+    \       EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
+    \       PUSH, __7_intnl_UnityEngineTransform\r\n        PUSH, __2__position_Vector3\r\n
+    \       EXTERN, \"UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # public void Rightward()\r\n    .export Rightward\r\n        \r\n    Rightward:\r\n
+    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # TransferOfAuthority();\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        PUSH, __8_intnl_oldReturnLoc_UInt32\r\n
+    \       COPY\r\n        PUSH, __8_const_intnl_exitJumpLoc_UInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000538\r\n
+    \       PUSH, __8_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # var _position = _gameObject.transform.position;\r\n
+    \       PUSH, _gameObject\r\n        PUSH, __8_intnl_UnityEngineTransform\r\n
+    \       EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
+    \       PUSH, __8_intnl_UnityEngineTransform\r\n        PUSH, __6_intnl_UnityEngineVector3\r\n
+    \       EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n
+    \       PUSH, __6_intnl_UnityEngineVector3\r\n        PUSH, __3__position_Vector3\r\n
+    \       COPY\r\n        \r\n         # var x = _position.x + xAmountOfMovement;\r\n
+    \       PUSH, __3__position_Vector3\r\n        PUSH, __12_intnl_SystemSingle\r\n
+    \       EXTERN, \"UnityEngineVector3.__get_x__SystemSingle\"\r\n        PUSH,
+    __12_intnl_SystemSingle\r\n        PUSH, xAmountOfMovement\r\n        PUSH, __13_intnl_SystemSingle\r\n
+    \       EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n
+    \       PUSH, __13_intnl_SystemSingle\r\n        PUSH, __1_x_Single\r\n        COPY\r\n
+    \       \r\n         # _position = new Vector3(x, _position.y, _position.z);\r\n
+    \       PUSH, __3__position_Vector3\r\n        PUSH, __14_intnl_SystemSingle\r\n
+    \       EXTERN, \"UnityEngineVector3.__get_y__SystemSingle\"\r\n        PUSH,
+    __3__position_Vector3\r\n        PUSH, __15_intnl_SystemSingle\r\n        EXTERN,
+    \"UnityEngineVector3.__get_z__SystemSingle\"\r\n        PUSH, __1_x_Single\r\n
+    \       PUSH, __14_intnl_SystemSingle\r\n        PUSH, __15_intnl_SystemSingle\r\n
+    \       PUSH, __7_intnl_UnityEngineVector3\r\n        EXTERN, \"UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3\"\r\n
+    \       PUSH, __7_intnl_UnityEngineVector3\r\n        PUSH, __3__position_Vector3\r\n
+    \       COPY\r\n        \r\n         # _gameObject.transform.position = _position;\r\n
+    \       PUSH, _gameObject\r\n        PUSH, __9_intnl_UnityEngineTransform\r\n
+    \       EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
+    \       PUSH, __9_intnl_UnityEngineTransform\r\n        PUSH, __3__position_Vector3\r\n
+    \       EXTERN, \"UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n.code_end\r\n"
+  assemblyError: 
+  sourceCsScript: {fileID: 11500000, guid: f0a8b9f40f39c4d4c9f10ac4673ea95c, type: 3}
+  behaviourIDHeapVarName: __refl_const_intnl_udonTypeID
+  compileErrors: []
+  debugInfo:
+    serializedDebugSpans:
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 0
+      endSourceChar: 0
+      line: 0
+      lineChar: 0
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 0
+      endSourceChar: 0
+      line: 0
+      lineChar: 0
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 0
+      endSourceChar: 6
+      line: 0
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 6
+      endSourceChar: 18
+      line: 0
+      lineChar: 6
+      spanCodeSection: "UdonSharp;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 18
+      endSourceChar: 24
+      line: 1
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 24
+      endSourceChar: 38
+      line: 1
+      lineChar: 6
+      spanCodeSection: "UnityEngine;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 38
+      endSourceChar: 44
+      line: 2
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 44
+      endSourceChar: 44
+      line: 2
+      lineChar: 6
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 44
+      endSourceChar: 48
+      line: 2
+      lineChar: 6
+      spanCodeSection: VRC.
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 48
+      endSourceChar: 58
+      line: 2
+      lineChar: 10
+      spanCodeSection: "SDKBase;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 58
+      endSourceChar: 64
+      line: 3
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 64
+      endSourceChar: 64
+      line: 3
+      lineChar: 6
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 64
+      endSourceChar: 68
+      line: 3
+      lineChar: 6
+      spanCodeSection: VRC.
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 68
+      endSourceChar: 77
+      line: 3
+      lineChar: 10
+      spanCodeSection: "Udon;\r\n\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 77
+      endSourceChar: 105
+      line: 5
+      lineChar: 0
+      spanCodeSection: 'public class MoveSyncObject '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 105
+      endSourceChar: 107
+      line: 5
+      lineChar: 28
+      spanCodeSection: ': '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 107
+      endSourceChar: 107
+      line: 5
+      lineChar: 30
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 107
+      endSourceChar: 134
+      line: 5
+      lineChar: 30
+      spanCodeSection: "UdonSharpBehaviour\r\n{\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 134
+      endSourceChar: 135
+      line: 7
+      lineChar: 4
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 135
+      endSourceChar: 135
+      line: 7
+      lineChar: 5
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 135
+      endSourceChar: 159
+      line: 7
+      lineChar: 5
+      spanCodeSection: 'SerializeField] private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 159
+      endSourceChar: 159
+      line: 7
+      lineChar: 29
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 159
+      endSourceChar: 188
+      line: 7
+      lineChar: 29
+      spanCodeSection: "GameObject _gameObject;\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 188
+      endSourceChar: 196
+      line: 8
+      lineChar: 4
+      spanCodeSection: 'private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 196
+      endSourceChar: 196
+      line: 8
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 196
+      endSourceChar: 234
+      line: 8
+      lineChar: 12
+      spanCodeSection: "float xAmountOfMovement = 4.08f;\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 234
+      endSourceChar: 242
+      line: 9
+      lineChar: 4
+      spanCodeSection: 'private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 242
+      endSourceChar: 242
+      line: 9
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 242
+      endSourceChar: 280
+      line: 9
+      lineChar: 12
+      spanCodeSection: "float zAmountOfMovement = 4.39f;\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 280
+      endSourceChar: 288
+      line: 10
+      lineChar: 4
+      spanCodeSection: 'private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 288
+      endSourceChar: 288
+      line: 10
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 288
+      endSourceChar: 311
+      line: 10
+      lineChar: 12
+      spanCodeSection: "CubeUI _cubeUi;\r\n\r\n    "
+    - startInstruction: 0
+      endInstruction: 19
+      startSourceChar: 311
+      endSourceChar: 337
+      line: 12
+      lineChar: 4
+      spanCodeSection: "private void Start()\r\n    "
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 337
+      endSourceChar: 348
+      line: 13
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 348
+      endSourceChar: 348
+      line: 14
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 348
+      endSourceChar: 358
+      line: 14
+      lineChar: 8
+      spanCodeSection: '_cubeUi = '
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 358
+      endSourceChar: 358
+      line: 14
+      lineChar: 18
+      spanCodeSection: 
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 358
+      endSourceChar: 358
+      line: 14
+      lineChar: 18
+      spanCodeSection: 
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 358
+      endSourceChar: 358
+      line: 14
+      lineChar: 18
+      spanCodeSection: 
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 358
+      endSourceChar: 358
+      line: 14
+      lineChar: 18
+      spanCodeSection: 
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 358
+      endSourceChar: 358
+      line: 14
+      lineChar: 18
+      spanCodeSection: 
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 358
+      endSourceChar: 369
+      line: 14
+      lineChar: 18
+      spanCodeSection: gameObject.
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 369
+      endSourceChar: 379
+      line: 14
+      lineChar: 29
+      spanCodeSection: transform.
+    - startInstruction: 20
+      endInstruction: 43
+      startSourceChar: 379
+      endSourceChar: 384
+      line: 14
+      lineChar: 39
+      spanCodeSection: root.
+    - startInstruction: 44
+      endInstruction: 67
+      startSourceChar: 384
+      endSourceChar: 395
+      line: 14
+      lineChar: 44
+      spanCodeSection: gameObject.
+    - startInstruction: 68
+      endInstruction: 91
+      startSourceChar: 395
+      endSourceChar: 407
+      line: 14
+      lineChar: 55
+      spanCodeSection: GetComponent
+    - startInstruction: 92
+      endInstruction: 91
+      startSourceChar: 407
+      endSourceChar: 408
+      line: 14
+      lineChar: 67
+      spanCodeSection: <
+    - startInstruction: 92
+      endInstruction: 603
+      startSourceChar: 408
+      endSourceChar: 433
+      line: 14
+      lineChar: 68
+      spanCodeSection: "CubeUI>();\r\n    }\r\n\r\n    "
+    - startInstruction: 604
+      endInstruction: 623
+      startSourceChar: 433
+      endSourceChar: 470
+      line: 17
+      lineChar: 4
+      spanCodeSection: "public override void Interact()\r\n    "
+    - startInstruction: 624
+      endInstruction: 623
+      startSourceChar: 470
+      endSourceChar: 481
+      line: 18
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 624
+      endInstruction: 623
+      startSourceChar: 481
+      endSourceChar: 481
+      line: 19
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 624
+      endInstruction: 623
+      startSourceChar: 481
+      endSourceChar: 481
+      line: 19
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 624
+      endInstruction: 691
+      startSourceChar: 481
+      endSourceChar: 515
+      line: 19
+      lineChar: 8
+      spanCodeSection: "TransferOfAuthority();\r\n\r\n        "
+    - startInstruction: 692
+      endInstruction: 691
+      startSourceChar: 515
+      endSourceChar: 523
+      line: 21
+      lineChar: 8
+      spanCodeSection: switch (
+    - startInstruction: 692
+      endInstruction: 691
+      startSourceChar: 523
+      endSourceChar: 523
+      line: 21
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 692
+      endInstruction: 691
+      startSourceChar: 523
+      endSourceChar: 534
+      line: 21
+      lineChar: 16
+      spanCodeSection: gameObject.
+    - startInstruction: 692
+      endInstruction: 715
+      startSourceChar: 534
+      endSourceChar: 564
+      line: 21
+      lineChar: 27
+      spanCodeSection: "name)\r\n        {\r\n            "
+    - startInstruction: 716
+      endInstruction: 715
+      startSourceChar: 564
+      endSourceChar: 569
+      line: 23
+      lineChar: 12
+      spanCodeSection: 'case '
+    - startInstruction: 716
+      endInstruction: 771
+      startSourceChar: 569
+      endSourceChar: 645
+      line: 23
+      lineChar: 17
+      spanCodeSection: "\"forward\":\r\n                Forward();\r\n                break;\r\n
+        \           "
+    - startInstruction: 772
+      endInstruction: 771
+      startSourceChar: 645
+      endSourceChar: 650
+      line: 26
+      lineChar: 12
+      spanCodeSection: 'case '
+    - startInstruction: 772
+      endInstruction: 827
+      startSourceChar: 650
+      endSourceChar: 728
+      line: 26
+      lineChar: 17
+      spanCodeSection: "\"backward\":\r\n                Backward();\r\n                break;\r\n
+        \           "
+    - startInstruction: 828
+      endInstruction: 827
+      startSourceChar: 728
+      endSourceChar: 733
+      line: 29
+      lineChar: 12
+      spanCodeSection: 'case '
+    - startInstruction: 828
+      endInstruction: 883
+      startSourceChar: 733
+      endSourceChar: 811
+      line: 29
+      lineChar: 17
+      spanCodeSection: "\"leftward\":\r\n                Leftward();\r\n                break;\r\n
+        \           "
+    - startInstruction: 884
+      endInstruction: 883
+      startSourceChar: 811
+      endSourceChar: 816
+      line: 32
+      lineChar: 12
+      spanCodeSection: 'case '
+    - startInstruction: 884
+      endInstruction: 1175
+      startSourceChar: 816
+      endSourceChar: 846
+      line: 32
+      lineChar: 17
+      spanCodeSection: "\"rightward\":\r\n                "
+    - startInstruction: 1176
+      endInstruction: 1175
+      startSourceChar: 846
+      endSourceChar: 846
+      line: 33
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 1176
+      endInstruction: 1175
+      startSourceChar: 846
+      endSourceChar: 846
+      line: 33
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 1176
+      endInstruction: 1243
+      startSourceChar: 846
+      endSourceChar: 876
+      line: 33
+      lineChar: 16
+      spanCodeSection: "Rightward();\r\n                "
+    - startInstruction: 1244
+      endInstruction: 1251
+      startSourceChar: 876
+      endSourceChar: 905
+      line: 34
+      lineChar: 16
+      spanCodeSection: "break;\r\n        }\r\n\r\n        "
+    - startInstruction: 1252
+      endInstruction: 1251
+      startSourceChar: 905
+      endSourceChar: 905
+      line: 37
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1252
+      endInstruction: 1251
+      startSourceChar: 905
+      endSourceChar: 925
+      line: 37
+      lineChar: 8
+      spanCodeSection: _cubeUi.OnSetActive(
+    - startInstruction: 1252
+      endInstruction: 1315
+      startSourceChar: 925
+      endSourceChar: 947
+      line: 37
+      lineChar: 28
+      spanCodeSection: "false);\r\n    }\r\n\r\n    "
+    - startInstruction: 1316
+      endInstruction: 1335
+      startSourceChar: 947
+      endSourceChar: 987
+      line: 40
+      lineChar: 4
+      spanCodeSection: "private void TransferOfAuthority()\r\n    "
+    - startInstruction: 1336
+      endInstruction: 1335
+      startSourceChar: 987
+      endSourceChar: 998
+      line: 41
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 1336
+      endInstruction: 1335
+      startSourceChar: 998
+      endSourceChar: 1002
+      line: 42
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 1336
+      endInstruction: 1335
+      startSourceChar: 1002
+      endSourceChar: 1042
+      line: 42
+      lineChar: 12
+      spanCodeSection: 'Networking.GetOwner(this.gameObject) != '
+    - startInstruction: 1336
+      endInstruction: 1335
+      startSourceChar: 1042
+      endSourceChar: 1042
+      line: 42
+      lineChar: 52
+      spanCodeSection: 
+    - startInstruction: 1336
+      endInstruction: 1335
+      startSourceChar: 1042
+      endSourceChar: 1053
+      line: 42
+      lineChar: 52
+      spanCodeSection: Networking.
+    - startInstruction: 1336
+      endInstruction: 1423
+      startSourceChar: 1053
+      endSourceChar: 1079
+      line: 42
+      lineChar: 63
+      spanCodeSection: "LocalPlayer)\r\n            "
+    - startInstruction: 1424
+      endInstruction: 1423
+      startSourceChar: 1079
+      endSourceChar: 1079
+      line: 43
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1424
+      endInstruction: 1423
+      startSourceChar: 1079
+      endSourceChar: 1099
+      line: 43
+      lineChar: 12
+      spanCodeSection: Networking.SetOwner(
+    - startInstruction: 1424
+      endInstruction: 1423
+      startSourceChar: 1099
+      endSourceChar: 1099
+      line: 43
+      lineChar: 32
+      spanCodeSection: 
+    - startInstruction: 1424
+      endInstruction: 1423
+      startSourceChar: 1099
+      endSourceChar: 1110
+      line: 43
+      lineChar: 32
+      spanCodeSection: Networking.
+    - startInstruction: 1424
+      endInstruction: 1439
+      startSourceChar: 1110
+      endSourceChar: 1123
+      line: 43
+      lineChar: 43
+      spanCodeSection: 'LocalPlayer, '
+    - startInstruction: 1440
+      endInstruction: 1439
+      startSourceChar: 1123
+      endSourceChar: 1123
+      line: 43
+      lineChar: 56
+      spanCodeSection: 
+    - startInstruction: 1440
+      endInstruction: 1439
+      startSourceChar: 1123
+      endSourceChar: 1128
+      line: 43
+      lineChar: 56
+      spanCodeSection: this.
+    - startInstruction: 1440
+      endInstruction: 1463
+      startSourceChar: 1128
+      endSourceChar: 1191
+      line: 43
+      lineChar: 61
+      spanCodeSection: "gameObject);\r\n\r\n        // \u4ED6\u4EBA\u304B\u3089\u898B\u305F\u64CD\u4F5C\u3059\u308B\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u306E\u30AA\u30FC\u30CA\u30FC\u6A29\u9650\u3092\u8B72\u6E21\r\n
+        \       "
+    - startInstruction: 1464
+      endInstruction: 1463
+      startSourceChar: 1191
+      endSourceChar: 1195
+      line: 46
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 1464
+      endInstruction: 1463
+      startSourceChar: 1195
+      endSourceChar: 1231
+      line: 46
+      lineChar: 12
+      spanCodeSection: 'Networking.GetOwner(_gameObject) != '
+    - startInstruction: 1464
+      endInstruction: 1463
+      startSourceChar: 1231
+      endSourceChar: 1231
+      line: 46
+      lineChar: 48
+      spanCodeSection: 
+    - startInstruction: 1464
+      endInstruction: 1463
+      startSourceChar: 1231
+      endSourceChar: 1242
+      line: 46
+      lineChar: 48
+      spanCodeSection: Networking.
+    - startInstruction: 1464
+      endInstruction: 1551
+      startSourceChar: 1242
+      endSourceChar: 1268
+      line: 46
+      lineChar: 59
+      spanCodeSection: "LocalPlayer)\r\n            "
+    - startInstruction: 1552
+      endInstruction: 1551
+      startSourceChar: 1268
+      endSourceChar: 1268
+      line: 47
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1552
+      endInstruction: 1551
+      startSourceChar: 1268
+      endSourceChar: 1288
+      line: 47
+      lineChar: 12
+      spanCodeSection: Networking.SetOwner(
+    - startInstruction: 1552
+      endInstruction: 1551
+      startSourceChar: 1288
+      endSourceChar: 1288
+      line: 47
+      lineChar: 32
+      spanCodeSection: 
+    - startInstruction: 1552
+      endInstruction: 1551
+      startSourceChar: 1288
+      endSourceChar: 1299
+      line: 47
+      lineChar: 32
+      spanCodeSection: Networking.
+    - startInstruction: 1552
+      endInstruction: 1567
+      startSourceChar: 1299
+      endSourceChar: 1312
+      line: 47
+      lineChar: 43
+      spanCodeSection: 'LocalPlayer, '
+    - startInstruction: 1568
+      endInstruction: 1599
+      startSourceChar: 1312
+      endSourceChar: 1340
+      line: 47
+      lineChar: 56
+      spanCodeSection: "_gameObject);\r\n    }\r\n\r\n    "
+    - startInstruction: 1600
+      endInstruction: 1619
+      startSourceChar: 1340
+      endSourceChar: 1367
+      line: 50
+      lineChar: 4
+      spanCodeSection: "public void Forward()\r\n    "
+    - startInstruction: 1620
+      endInstruction: 1619
+      startSourceChar: 1367
+      endSourceChar: 1378
+      line: 51
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 1620
+      endInstruction: 1619
+      startSourceChar: 1378
+      endSourceChar: 1378
+      line: 52
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1620
+      endInstruction: 1619
+      startSourceChar: 1378
+      endSourceChar: 1378
+      line: 52
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1620
+      endInstruction: 1687
+      startSourceChar: 1378
+      endSourceChar: 1410
+      line: 52
+      lineChar: 8
+      spanCodeSection: "TransferOfAuthority();\r\n        "
+    - startInstruction: 1688
+      endInstruction: 1687
+      startSourceChar: 1410
+      endSourceChar: 1410
+      line: 53
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1688
+      endInstruction: 1687
+      startSourceChar: 1410
+      endSourceChar: 1410
+      line: 53
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1688
+      endInstruction: 1687
+      startSourceChar: 1410
+      endSourceChar: 1424
+      line: 53
+      lineChar: 8
+      spanCodeSection: 'var _position '
+    - startInstruction: 1688
+      endInstruction: 1687
+      startSourceChar: 1424
+      endSourceChar: 1426
+      line: 53
+      lineChar: 22
+      spanCodeSection: '= '
+    - startInstruction: 1688
+      endInstruction: 1687
+      startSourceChar: 1426
+      endSourceChar: 1426
+      line: 53
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 1688
+      endInstruction: 1687
+      startSourceChar: 1426
+      endSourceChar: 1426
+      line: 53
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 1688
+      endInstruction: 1687
+      startSourceChar: 1426
+      endSourceChar: 1438
+      line: 53
+      lineChar: 24
+      spanCodeSection: _gameObject.
+    - startInstruction: 1688
+      endInstruction: 1687
+      startSourceChar: 1438
+      endSourceChar: 1448
+      line: 53
+      lineChar: 36
+      spanCodeSection: transform.
+    - startInstruction: 1688
+      endInstruction: 1755
+      startSourceChar: 1448
+      endSourceChar: 1467
+      line: 53
+      lineChar: 46
+      spanCodeSection: "position;\r\n        "
+    - startInstruction: 1756
+      endInstruction: 1755
+      startSourceChar: 1467
+      endSourceChar: 1467
+      line: 54
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1756
+      endInstruction: 1755
+      startSourceChar: 1467
+      endSourceChar: 1467
+      line: 54
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1756
+      endInstruction: 1755
+      startSourceChar: 1467
+      endSourceChar: 1473
+      line: 54
+      lineChar: 8
+      spanCodeSection: 'var z '
+    - startInstruction: 1756
+      endInstruction: 1755
+      startSourceChar: 1473
+      endSourceChar: 1475
+      line: 54
+      lineChar: 14
+      spanCodeSection: '= '
+    - startInstruction: 1756
+      endInstruction: 1755
+      startSourceChar: 1475
+      endSourceChar: 1489
+      line: 54
+      lineChar: 16
+      spanCodeSection: '_position.z + '
+    - startInstruction: 1756
+      endInstruction: 1831
+      startSourceChar: 1489
+      endSourceChar: 1519
+      line: 54
+      lineChar: 30
+      spanCodeSection: "zAmountOfMovement;\r\n\r\n        "
+    - startInstruction: 1832
+      endInstruction: 1831
+      startSourceChar: 1519
+      endSourceChar: 1519
+      line: 56
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1832
+      endInstruction: 1831
+      startSourceChar: 1519
+      endSourceChar: 1531
+      line: 56
+      lineChar: 8
+      spanCodeSection: '_position = '
+    - startInstruction: 1832
+      endInstruction: 1831
+      startSourceChar: 1531
+      endSourceChar: 1535
+      line: 56
+      lineChar: 20
+      spanCodeSection: 'new '
+    - startInstruction: 1832
+      endInstruction: 1831
+      startSourceChar: 1535
+      endSourceChar: 1543
+      line: 56
+      lineChar: 24
+      spanCodeSection: Vector3(
+    - startInstruction: 1832
+      endInstruction: 1831
+      startSourceChar: 1543
+      endSourceChar: 1543
+      line: 56
+      lineChar: 32
+      spanCodeSection: 
+    - startInstruction: 1832
+      endInstruction: 1831
+      startSourceChar: 1543
+      endSourceChar: 1543
+      line: 56
+      lineChar: 32
+      spanCodeSection: 
+    - startInstruction: 1832
+      endInstruction: 1831
+      startSourceChar: 1543
+      endSourceChar: 1553
+      line: 56
+      lineChar: 32
+      spanCodeSection: _position.
+    - startInstruction: 1832
+      endInstruction: 1855
+      startSourceChar: 1553
+      endSourceChar: 1556
+      line: 56
+      lineChar: 42
+      spanCodeSection: 'x, '
+    - startInstruction: 1856
+      endInstruction: 1855
+      startSourceChar: 1556
+      endSourceChar: 1556
+      line: 56
+      lineChar: 45
+      spanCodeSection: 
+    - startInstruction: 1856
+      endInstruction: 1855
+      startSourceChar: 1556
+      endSourceChar: 1556
+      line: 56
+      lineChar: 45
+      spanCodeSection: 
+    - startInstruction: 1856
+      endInstruction: 1855
+      startSourceChar: 1556
+      endSourceChar: 1566
+      line: 56
+      lineChar: 45
+      spanCodeSection: _position.
+    - startInstruction: 1856
+      endInstruction: 1879
+      startSourceChar: 1566
+      endSourceChar: 1569
+      line: 56
+      lineChar: 55
+      spanCodeSection: 'y, '
+    - startInstruction: 1880
+      endInstruction: 1879
+      startSourceChar: 1569
+      endSourceChar: 1569
+      line: 56
+      lineChar: 58
+      spanCodeSection: 
+    - startInstruction: 1880
+      endInstruction: 1939
+      startSourceChar: 1569
+      endSourceChar: 1582
+      line: 56
+      lineChar: 58
+      spanCodeSection: "z);\r\n        "
+    - startInstruction: 1940
+      endInstruction: 1939
+      startSourceChar: 1582
+      endSourceChar: 1582
+      line: 57
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1940
+      endInstruction: 1939
+      startSourceChar: 1582
+      endSourceChar: 1615
+      line: 57
+      lineChar: 8
+      spanCodeSection: '_gameObject.transform.position = '
+    - startInstruction: 1940
+      endInstruction: 1995
+      startSourceChar: 1615
+      endSourceChar: 1640
+      line: 57
+      lineChar: 41
+      spanCodeSection: "_position;\r\n    }\r\n\r\n    "
+    - startInstruction: 1996
+      endInstruction: 2015
+      startSourceChar: 1640
+      endSourceChar: 1668
+      line: 60
+      lineChar: 4
+      spanCodeSection: "public void Backward()\r\n    "
+    - startInstruction: 2016
+      endInstruction: 2015
+      startSourceChar: 1668
+      endSourceChar: 1679
+      line: 61
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 2016
+      endInstruction: 2015
+      startSourceChar: 1679
+      endSourceChar: 1679
+      line: 62
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2016
+      endInstruction: 2015
+      startSourceChar: 1679
+      endSourceChar: 1679
+      line: 62
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2016
+      endInstruction: 2083
+      startSourceChar: 1679
+      endSourceChar: 1711
+      line: 62
+      lineChar: 8
+      spanCodeSection: "TransferOfAuthority();\r\n        "
+    - startInstruction: 2084
+      endInstruction: 2083
+      startSourceChar: 1711
+      endSourceChar: 1711
+      line: 63
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2084
+      endInstruction: 2083
+      startSourceChar: 1711
+      endSourceChar: 1711
+      line: 63
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2084
+      endInstruction: 2083
+      startSourceChar: 1711
+      endSourceChar: 1725
+      line: 63
+      lineChar: 8
+      spanCodeSection: 'var _position '
+    - startInstruction: 2084
+      endInstruction: 2083
+      startSourceChar: 1725
+      endSourceChar: 1727
+      line: 63
+      lineChar: 22
+      spanCodeSection: '= '
+    - startInstruction: 2084
+      endInstruction: 2083
+      startSourceChar: 1727
+      endSourceChar: 1727
+      line: 63
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 2084
+      endInstruction: 2083
+      startSourceChar: 1727
+      endSourceChar: 1727
+      line: 63
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 2084
+      endInstruction: 2083
+      startSourceChar: 1727
+      endSourceChar: 1739
+      line: 63
+      lineChar: 24
+      spanCodeSection: _gameObject.
+    - startInstruction: 2084
+      endInstruction: 2083
+      startSourceChar: 1739
+      endSourceChar: 1749
+      line: 63
+      lineChar: 36
+      spanCodeSection: transform.
+    - startInstruction: 2084
+      endInstruction: 2151
+      startSourceChar: 1749
+      endSourceChar: 1768
+      line: 63
+      lineChar: 46
+      spanCodeSection: "position;\r\n        "
+    - startInstruction: 2152
+      endInstruction: 2151
+      startSourceChar: 1768
+      endSourceChar: 1768
+      line: 64
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2152
+      endInstruction: 2151
+      startSourceChar: 1768
+      endSourceChar: 1768
+      line: 64
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2152
+      endInstruction: 2151
+      startSourceChar: 1768
+      endSourceChar: 1774
+      line: 64
+      lineChar: 8
+      spanCodeSection: 'var z '
+    - startInstruction: 2152
+      endInstruction: 2151
+      startSourceChar: 1774
+      endSourceChar: 1776
+      line: 64
+      lineChar: 14
+      spanCodeSection: '= '
+    - startInstruction: 2152
+      endInstruction: 2151
+      startSourceChar: 1776
+      endSourceChar: 1790
+      line: 64
+      lineChar: 16
+      spanCodeSection: '_position.z - '
+    - startInstruction: 2152
+      endInstruction: 2227
+      startSourceChar: 1790
+      endSourceChar: 1820
+      line: 64
+      lineChar: 30
+      spanCodeSection: "zAmountOfMovement;\r\n\r\n        "
+    - startInstruction: 2228
+      endInstruction: 2227
+      startSourceChar: 1820
+      endSourceChar: 1820
+      line: 66
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2228
+      endInstruction: 2227
+      startSourceChar: 1820
+      endSourceChar: 1832
+      line: 66
+      lineChar: 8
+      spanCodeSection: '_position = '
+    - startInstruction: 2228
+      endInstruction: 2227
+      startSourceChar: 1832
+      endSourceChar: 1836
+      line: 66
+      lineChar: 20
+      spanCodeSection: 'new '
+    - startInstruction: 2228
+      endInstruction: 2227
+      startSourceChar: 1836
+      endSourceChar: 1844
+      line: 66
+      lineChar: 24
+      spanCodeSection: Vector3(
+    - startInstruction: 2228
+      endInstruction: 2227
+      startSourceChar: 1844
+      endSourceChar: 1844
+      line: 66
+      lineChar: 32
+      spanCodeSection: 
+    - startInstruction: 2228
+      endInstruction: 2227
+      startSourceChar: 1844
+      endSourceChar: 1844
+      line: 66
+      lineChar: 32
+      spanCodeSection: 
+    - startInstruction: 2228
+      endInstruction: 2227
+      startSourceChar: 1844
+      endSourceChar: 1854
+      line: 66
+      lineChar: 32
+      spanCodeSection: _position.
+    - startInstruction: 2228
+      endInstruction: 2251
+      startSourceChar: 1854
+      endSourceChar: 1857
+      line: 66
+      lineChar: 42
+      spanCodeSection: 'x, '
+    - startInstruction: 2252
+      endInstruction: 2251
+      startSourceChar: 1857
+      endSourceChar: 1857
+      line: 66
+      lineChar: 45
+      spanCodeSection: 
+    - startInstruction: 2252
+      endInstruction: 2251
+      startSourceChar: 1857
+      endSourceChar: 1857
+      line: 66
+      lineChar: 45
+      spanCodeSection: 
+    - startInstruction: 2252
+      endInstruction: 2251
+      startSourceChar: 1857
+      endSourceChar: 1867
+      line: 66
+      lineChar: 45
+      spanCodeSection: _position.
+    - startInstruction: 2252
+      endInstruction: 2275
+      startSourceChar: 1867
+      endSourceChar: 1870
+      line: 66
+      lineChar: 55
+      spanCodeSection: 'y, '
+    - startInstruction: 2276
+      endInstruction: 2275
+      startSourceChar: 1870
+      endSourceChar: 1870
+      line: 66
+      lineChar: 58
+      spanCodeSection: 
+    - startInstruction: 2276
+      endInstruction: 2335
+      startSourceChar: 1870
+      endSourceChar: 1883
+      line: 66
+      lineChar: 58
+      spanCodeSection: "z);\r\n        "
+    - startInstruction: 2336
+      endInstruction: 2335
+      startSourceChar: 1883
+      endSourceChar: 1883
+      line: 67
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2336
+      endInstruction: 2335
+      startSourceChar: 1883
+      endSourceChar: 1916
+      line: 67
+      lineChar: 8
+      spanCodeSection: '_gameObject.transform.position = '
+    - startInstruction: 2336
+      endInstruction: 2391
+      startSourceChar: 1916
+      endSourceChar: 1941
+      line: 67
+      lineChar: 41
+      spanCodeSection: "_position;\r\n    }\r\n\r\n    "
+    - startInstruction: 2392
+      endInstruction: 2411
+      startSourceChar: 1941
+      endSourceChar: 1969
+      line: 70
+      lineChar: 4
+      spanCodeSection: "public void Leftward()\r\n    "
+    - startInstruction: 2412
+      endInstruction: 2411
+      startSourceChar: 1969
+      endSourceChar: 1980
+      line: 71
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 2412
+      endInstruction: 2411
+      startSourceChar: 1980
+      endSourceChar: 1980
+      line: 72
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2412
+      endInstruction: 2411
+      startSourceChar: 1980
+      endSourceChar: 1980
+      line: 72
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2412
+      endInstruction: 2479
+      startSourceChar: 1980
+      endSourceChar: 2012
+      line: 72
+      lineChar: 8
+      spanCodeSection: "TransferOfAuthority();\r\n        "
+    - startInstruction: 2480
+      endInstruction: 2479
+      startSourceChar: 2012
+      endSourceChar: 2012
+      line: 73
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2480
+      endInstruction: 2479
+      startSourceChar: 2012
+      endSourceChar: 2012
+      line: 73
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2480
+      endInstruction: 2479
+      startSourceChar: 2012
+      endSourceChar: 2026
+      line: 73
+      lineChar: 8
+      spanCodeSection: 'var _position '
+    - startInstruction: 2480
+      endInstruction: 2479
+      startSourceChar: 2026
+      endSourceChar: 2028
+      line: 73
+      lineChar: 22
+      spanCodeSection: '= '
+    - startInstruction: 2480
+      endInstruction: 2479
+      startSourceChar: 2028
+      endSourceChar: 2028
+      line: 73
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 2480
+      endInstruction: 2479
+      startSourceChar: 2028
+      endSourceChar: 2028
+      line: 73
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 2480
+      endInstruction: 2479
+      startSourceChar: 2028
+      endSourceChar: 2040
+      line: 73
+      lineChar: 24
+      spanCodeSection: _gameObject.
+    - startInstruction: 2480
+      endInstruction: 2479
+      startSourceChar: 2040
+      endSourceChar: 2050
+      line: 73
+      lineChar: 36
+      spanCodeSection: transform.
+    - startInstruction: 2480
+      endInstruction: 2547
+      startSourceChar: 2050
+      endSourceChar: 2069
+      line: 73
+      lineChar: 46
+      spanCodeSection: "position;\r\n        "
+    - startInstruction: 2548
+      endInstruction: 2547
+      startSourceChar: 2069
+      endSourceChar: 2069
+      line: 74
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2548
+      endInstruction: 2547
+      startSourceChar: 2069
+      endSourceChar: 2069
+      line: 74
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2548
+      endInstruction: 2547
+      startSourceChar: 2069
+      endSourceChar: 2075
+      line: 74
+      lineChar: 8
+      spanCodeSection: 'var x '
+    - startInstruction: 2548
+      endInstruction: 2547
+      startSourceChar: 2075
+      endSourceChar: 2077
+      line: 74
+      lineChar: 14
+      spanCodeSection: '= '
+    - startInstruction: 2548
+      endInstruction: 2547
+      startSourceChar: 2077
+      endSourceChar: 2091
+      line: 74
+      lineChar: 16
+      spanCodeSection: '_position.x - '
+    - startInstruction: 2548
+      endInstruction: 2623
+      startSourceChar: 2091
+      endSourceChar: 2121
+      line: 74
+      lineChar: 30
+      spanCodeSection: "xAmountOfMovement;\r\n\r\n        "
+    - startInstruction: 2624
+      endInstruction: 2623
+      startSourceChar: 2121
+      endSourceChar: 2121
+      line: 76
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2624
+      endInstruction: 2623
+      startSourceChar: 2121
+      endSourceChar: 2133
+      line: 76
+      lineChar: 8
+      spanCodeSection: '_position = '
+    - startInstruction: 2624
+      endInstruction: 2623
+      startSourceChar: 2133
+      endSourceChar: 2137
+      line: 76
+      lineChar: 20
+      spanCodeSection: 'new '
+    - startInstruction: 2624
+      endInstruction: 2623
+      startSourceChar: 2137
+      endSourceChar: 2145
+      line: 76
+      lineChar: 24
+      spanCodeSection: Vector3(
+    - startInstruction: 2624
+      endInstruction: 2623
+      startSourceChar: 2145
+      endSourceChar: 2145
+      line: 76
+      lineChar: 32
+      spanCodeSection: 
+    - startInstruction: 2624
+      endInstruction: 2623
+      startSourceChar: 2145
+      endSourceChar: 2148
+      line: 76
+      lineChar: 32
+      spanCodeSection: 'x, '
+    - startInstruction: 2624
+      endInstruction: 2623
+      startSourceChar: 2148
+      endSourceChar: 2148
+      line: 76
+      lineChar: 35
+      spanCodeSection: 
+    - startInstruction: 2624
+      endInstruction: 2623
+      startSourceChar: 2148
+      endSourceChar: 2148
+      line: 76
+      lineChar: 35
+      spanCodeSection: 
+    - startInstruction: 2624
+      endInstruction: 2623
+      startSourceChar: 2148
+      endSourceChar: 2158
+      line: 76
+      lineChar: 35
+      spanCodeSection: _position.
+    - startInstruction: 2624
+      endInstruction: 2647
+      startSourceChar: 2158
+      endSourceChar: 2161
+      line: 76
+      lineChar: 45
+      spanCodeSection: 'y, '
+    - startInstruction: 2648
+      endInstruction: 2647
+      startSourceChar: 2161
+      endSourceChar: 2161
+      line: 76
+      lineChar: 48
+      spanCodeSection: 
+    - startInstruction: 2648
+      endInstruction: 2647
+      startSourceChar: 2161
+      endSourceChar: 2161
+      line: 76
+      lineChar: 48
+      spanCodeSection: 
+    - startInstruction: 2648
+      endInstruction: 2647
+      startSourceChar: 2161
+      endSourceChar: 2171
+      line: 76
+      lineChar: 48
+      spanCodeSection: _position.
+    - startInstruction: 2648
+      endInstruction: 2731
+      startSourceChar: 2171
+      endSourceChar: 2184
+      line: 76
+      lineChar: 58
+      spanCodeSection: "z);\r\n        "
+    - startInstruction: 2732
+      endInstruction: 2731
+      startSourceChar: 2184
+      endSourceChar: 2184
+      line: 77
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2732
+      endInstruction: 2731
+      startSourceChar: 2184
+      endSourceChar: 2217
+      line: 77
+      lineChar: 8
+      spanCodeSection: '_gameObject.transform.position = '
+    - startInstruction: 2732
+      endInstruction: 2787
+      startSourceChar: 2217
+      endSourceChar: 2242
+      line: 77
+      lineChar: 41
+      spanCodeSection: "_position;\r\n    }\r\n\r\n    "
+    - startInstruction: 2788
+      endInstruction: 2807
+      startSourceChar: 2242
+      endSourceChar: 2271
+      line: 80
+      lineChar: 4
+      spanCodeSection: "public void Rightward()\r\n    "
+    - startInstruction: 2808
+      endInstruction: 2807
+      startSourceChar: 2271
+      endSourceChar: 2282
+      line: 81
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 2808
+      endInstruction: 2807
+      startSourceChar: 2282
+      endSourceChar: 2282
+      line: 82
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2808
+      endInstruction: 2807
+      startSourceChar: 2282
+      endSourceChar: 2282
+      line: 82
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2808
+      endInstruction: 2875
+      startSourceChar: 2282
+      endSourceChar: 2314
+      line: 82
+      lineChar: 8
+      spanCodeSection: "TransferOfAuthority();\r\n        "
+    - startInstruction: 2876
+      endInstruction: 2875
+      startSourceChar: 2314
+      endSourceChar: 2314
+      line: 83
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2876
+      endInstruction: 2875
+      startSourceChar: 2314
+      endSourceChar: 2314
+      line: 83
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2876
+      endInstruction: 2875
+      startSourceChar: 2314
+      endSourceChar: 2328
+      line: 83
+      lineChar: 8
+      spanCodeSection: 'var _position '
+    - startInstruction: 2876
+      endInstruction: 2875
+      startSourceChar: 2328
+      endSourceChar: 2330
+      line: 83
+      lineChar: 22
+      spanCodeSection: '= '
+    - startInstruction: 2876
+      endInstruction: 2875
+      startSourceChar: 2330
+      endSourceChar: 2330
+      line: 83
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 2876
+      endInstruction: 2875
+      startSourceChar: 2330
+      endSourceChar: 2330
+      line: 83
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 2876
+      endInstruction: 2875
+      startSourceChar: 2330
+      endSourceChar: 2342
+      line: 83
+      lineChar: 24
+      spanCodeSection: _gameObject.
+    - startInstruction: 2876
+      endInstruction: 2875
+      startSourceChar: 2342
+      endSourceChar: 2352
+      line: 83
+      lineChar: 36
+      spanCodeSection: transform.
+    - startInstruction: 2876
+      endInstruction: 2943
+      startSourceChar: 2352
+      endSourceChar: 2371
+      line: 83
+      lineChar: 46
+      spanCodeSection: "position;\r\n        "
+    - startInstruction: 2944
+      endInstruction: 2943
+      startSourceChar: 2371
+      endSourceChar: 2371
+      line: 84
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2944
+      endInstruction: 2943
+      startSourceChar: 2371
+      endSourceChar: 2371
+      line: 84
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2944
+      endInstruction: 2943
+      startSourceChar: 2371
+      endSourceChar: 2377
+      line: 84
+      lineChar: 8
+      spanCodeSection: 'var x '
+    - startInstruction: 2944
+      endInstruction: 2943
+      startSourceChar: 2377
+      endSourceChar: 2379
+      line: 84
+      lineChar: 14
+      spanCodeSection: '= '
+    - startInstruction: 2944
+      endInstruction: 2943
+      startSourceChar: 2379
+      endSourceChar: 2393
+      line: 84
+      lineChar: 16
+      spanCodeSection: '_position.x + '
+    - startInstruction: 2944
+      endInstruction: 3019
+      startSourceChar: 2393
+      endSourceChar: 2423
+      line: 84
+      lineChar: 30
+      spanCodeSection: "xAmountOfMovement;\r\n\r\n        "
+    - startInstruction: 3020
+      endInstruction: 3019
+      startSourceChar: 2423
+      endSourceChar: 2423
+      line: 86
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 3020
+      endInstruction: 3019
+      startSourceChar: 2423
+      endSourceChar: 2435
+      line: 86
+      lineChar: 8
+      spanCodeSection: '_position = '
+    - startInstruction: 3020
+      endInstruction: 3019
+      startSourceChar: 2435
+      endSourceChar: 2439
+      line: 86
+      lineChar: 20
+      spanCodeSection: 'new '
+    - startInstruction: 3020
+      endInstruction: 3019
+      startSourceChar: 2439
+      endSourceChar: 2447
+      line: 86
+      lineChar: 24
+      spanCodeSection: Vector3(
+    - startInstruction: 3020
+      endInstruction: 3019
+      startSourceChar: 2447
+      endSourceChar: 2447
+      line: 86
+      lineChar: 32
+      spanCodeSection: 
+    - startInstruction: 3020
+      endInstruction: 3019
+      startSourceChar: 2447
+      endSourceChar: 2450
+      line: 86
+      lineChar: 32
+      spanCodeSection: 'x, '
+    - startInstruction: 3020
+      endInstruction: 3019
+      startSourceChar: 2450
+      endSourceChar: 2450
+      line: 86
+      lineChar: 35
+      spanCodeSection: 
+    - startInstruction: 3020
+      endInstruction: 3019
+      startSourceChar: 2450
+      endSourceChar: 2450
+      line: 86
+      lineChar: 35
+      spanCodeSection: 
+    - startInstruction: 3020
+      endInstruction: 3019
+      startSourceChar: 2450
+      endSourceChar: 2460
+      line: 86
+      lineChar: 35
+      spanCodeSection: _position.
+    - startInstruction: 3020
+      endInstruction: 3043
+      startSourceChar: 2460
+      endSourceChar: 2463
+      line: 86
+      lineChar: 45
+      spanCodeSection: 'y, '
+    - startInstruction: 3044
+      endInstruction: 3043
+      startSourceChar: 2463
+      endSourceChar: 2463
+      line: 86
+      lineChar: 48
+      spanCodeSection: 
+    - startInstruction: 3044
+      endInstruction: 3043
+      startSourceChar: 2463
+      endSourceChar: 2463
+      line: 86
+      lineChar: 48
+      spanCodeSection: 
+    - startInstruction: 3044
+      endInstruction: 3043
+      startSourceChar: 2463
+      endSourceChar: 2473
+      line: 86
+      lineChar: 48
+      spanCodeSection: _position.
+    - startInstruction: 3044
+      endInstruction: 3127
+      startSourceChar: 2473
+      endSourceChar: 2486
+      line: 86
+      lineChar: 58
+      spanCodeSection: "z);\r\n        "
+    - startInstruction: 3128
+      endInstruction: 3127
+      startSourceChar: 2486
+      endSourceChar: 2486
+      line: 87
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 3128
+      endInstruction: 3127
+      startSourceChar: 2486
+      endSourceChar: 2519
+      line: 87
+      lineChar: 8
+      spanCodeSection: '_gameObject.transform.position = '
+    - startInstruction: 3128
+      endInstruction: 3128
+      startSourceChar: 2519
+      endSourceChar: 2519
+      line: 87
+      lineChar: 41
+      spanCodeSection: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11500000, guid: 9706d828c8b1fe14099a4d47e5db3303, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: fieldDefinitions
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UdonSharp.FieldDefinition,
+        UdonSharp.Editor]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: _gameObject
+    - Name: $v
+      Entry: 7
+      Data: 2|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 3|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 4|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.GameObject, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: UnityEngineGameObject
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: _gameObject
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: _gameObject
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 6|UnityEngine.SerializeField, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: xAmountOfMovement
+    - Name: $v
+      Entry: 7
+      Data: 7|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 8|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 9|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Single, mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemSingle
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: xAmountOfMovement
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: xAmountOfMovement
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: zAmountOfMovement
+    - Name: $v
+      Entry: 7
+      Data: 11|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 12|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 9
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemSingle
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: zAmountOfMovement
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: zAmountOfMovement
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 13|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: _cubeUi
+    - Name: $v
+      Entry: 7
+      Data: 14|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 15|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 16|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: CubeUI, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: VRCUdonUdonBehaviour
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: _cubeUi
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: _cubeUi
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 17|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
