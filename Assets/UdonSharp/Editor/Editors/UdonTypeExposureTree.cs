@@ -408,7 +408,14 @@ namespace UdonSharp.Editors
             {
                 metadata.rowColor = Color.red;
                 if (metadata.exposed)
+                {
                     metadata.rowColor = Color.green;
+
+                    if (!EditorGUIUtility.isProSkin)
+                    {
+                        metadata.rowColor = new Color(0.2f, 0.6f, 0.2f);
+                    }
+                }
 
                 if (metadata.isType)
                 {
@@ -418,6 +425,11 @@ namespace UdonSharp.Editors
                     Color.RGBToHSV(labelColor, out h, out s, out v);
                     s = 0.9f;
                     v = 0.95f;
+
+                    if (!EditorGUIUtility.isProSkin)
+                    {
+                        v = Mathf.Lerp(0.8f, 0.55f, metadata.childExposure);
+                    }
 
                     metadata.rowColor = Color.HSVToRGB(h, s, v);
 
@@ -768,7 +780,7 @@ namespace UdonSharp.Editors
 
             if (treeView != null)
             {
-                treeView.OnGUI(new Rect(0, 0, position.width, position.height - 60));
+                treeView.OnGUI(new Rect(0, 0, position.width, position.height - 80));
             }
 
             EditorGUILayout.EndScrollView();

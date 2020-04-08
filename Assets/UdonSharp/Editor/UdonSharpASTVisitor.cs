@@ -301,6 +301,13 @@ namespace UdonSharp
             visitorContext.PopTable();
         }
 
+        public override void VisitConstructorDeclaration(ConstructorDeclarationSyntax node)
+        {
+            UpdateSyntaxNode(node);
+
+            throw new System.NotSupportedException("UdonSharp does not currently support constructors on UdonSharpBehaviours, use the Start() event to initialize instead.");
+        }
+
         public override void VisitPropertyDeclaration(PropertyDeclarationSyntax node)
         {
             UpdateSyntaxNode(node);
@@ -1066,6 +1073,8 @@ namespace UdonSharp
                         operatorMethods.AddRange(GetOperators(operandCapture.GetReturnType(), node.OperatorToken.Kind()));
                         operatorMethods.AddRange(GetImplicitHigherPrecisionOperator(operandCapture.GetReturnType(), null, SyntaxKindToBuiltinOperator(node.OperatorToken.Kind()), true));
                         break;
+                    case SyntaxKind.TildeToken:
+                        throw new System.NotSupportedException("Udon does not support BitwiseNot at the moment (https://vrchat.canny.io/vrchat-udon-closed-alpha-feedback/p/bitwisenot-for-integer-built-in-types)");
                     default:
                         throw new System.NotImplementedException($"Handling for prefix token {node.OperatorToken.Kind()} is not implemented");
                 }
@@ -1559,20 +1568,28 @@ namespace UdonSharp
             SymbolDefinition rhsValue = null;
             SymbolDefinition lhsValue = null;
 
-            using (ExpressionCaptureScope rhsCapture = new ExpressionCaptureScope(visitorContext, null))
-            {
-                Visit(node.Right);
-
-                rhsValue = rhsCapture.ExecuteGet();
-            }
-
             ExpressionCaptureScope outerScope = visitorContext.topCaptureScope;
 
             using (ExpressionCaptureScope lhsCapture = new ExpressionCaptureScope(visitorContext, null))
             {
                 Visit(node.Left);
 
-                lhsValue = lhsCapture.ExecuteGet();
+                // This needs to be copied because someone can do an in place assignment operator on the rhs that changes the lhs value
+                SymbolDefinition lhsCopy = visitorContext.topTable.CreateUnnamedSymbol(lhsCapture.GetReturnType(true), SymbolDeclTypeFlags.Internal);
+                using (ExpressionCaptureScope lhsCopySetter = new ExpressionCaptureScope(visitorContext, null))
+                {
+                    lhsCopySetter.SetToLocalSymbol(lhsCopy);
+                    lhsCopySetter.ExecuteSetDirect(lhsCapture);
+                }
+
+                lhsValue = lhsCopy;
+
+                using (ExpressionCaptureScope rhsCapture = new ExpressionCaptureScope(visitorContext, null))
+                {
+                    Visit(node.Right);
+
+                    rhsValue = rhsCapture.ExecuteGet();
+                }
 
                 System.Type lhsType = lhsValue.symbolCsType;
                 System.Type rhsType = rhsValue.symbolCsType;

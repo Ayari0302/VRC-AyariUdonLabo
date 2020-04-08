@@ -54,4 +54,6 @@ crashlytics-build.properties
 Assets/VRCSDK/
 Assets/Plugins/
 Assets/Udon/
-Assets/Ayari/Resources
+Assets/Ayari/Resources/
+Assets/DynamicBone/
+Assets/DynamicBone.meta
